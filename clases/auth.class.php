@@ -51,7 +51,7 @@
     
 
         private function obtenerDatosUsuario($username){
-            $query = "SELECT username, email, password, estado from user where username = '$username'";
+            $query = "SELECT * from user where username = '$username'";
             $datos = parent::obtenerDatos($query);
 
             if (isset($datos[0]["username"])) {
