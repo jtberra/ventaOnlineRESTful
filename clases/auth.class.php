@@ -67,7 +67,7 @@
             $token = bin2hex(openssl_random_pseudo_bytes(16,$val));
             $date = date("Y-m-d H:i");
             $estado = "Activo";
-            $query = "INSERT INTO Token (username, token, estado, fecha) VALUES('$username','$token','$estado','$date')";
+            $query = "INSERT INTO token (username, token, estado, fecha) VALUES('$username','$token','$estado','$date')";
             $verifica = parent::nonQuery($query);
             if($verifica){
                 return $token;
