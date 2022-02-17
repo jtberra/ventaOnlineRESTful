@@ -9,7 +9,6 @@
         private $port;
         private $conexion;
 
-
         function __construct(){
             $listadatos = $this->datosConexion();
             foreach ($listadatos as $key => $value) {
@@ -49,7 +48,6 @@
                 $resultArray[] = $key;
             }
             return $this->convertirUTF8($resultArray);
-    
         }
 
         public function nonQuery($sqlstr){

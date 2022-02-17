@@ -16,6 +16,7 @@
                 $usuario = $datos['username'];
                 $password = $datos['password'];
                 //$password = parent::encriptar($password);
+                //no salió la encriptación 
                 $datos = $this->obtenerDatosUsuario($usuario);
                 if($datos){
                     //verificar si la contraseña es igual
